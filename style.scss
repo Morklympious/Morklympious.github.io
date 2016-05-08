@@ -241,6 +241,10 @@ nav {
     font-family: $oswald;
     font-weight: bold;
 
+    &:hover {
+      color: $CCBlue;
+    }
+
     @include mobile {
       margin: 0 10px;
       color: $CCRed;
@@ -284,12 +288,12 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
-    color: $darkGray;
+    color: $white;
+    background-color: $CCRed;
     font-family: $oswald;
 
-    &:hover {
-      color: $CCRed;
-    }
+    padding: 8px;
+    text-align: center;
 
   }
 }
