@@ -13,6 +13,8 @@ I GET IT, ALRIGHT. WE KNOW. WE ALL KNOW I'M *ALL* ABOUT THE JS.
 
 I just learn really interesting stuff in javascript!
 
+<!--more-->
+
 Anyways, let's get to the meat and bones here: webpage performance doesn't incur a huge hit as a result of javascript, typically. That's not to say you shouldn't take every measure to optimize performance, I'm just pointing out that a lot of performance issues will only start showing themselves if you've got to run a high traffic, high content site like Amazon, Google, etc.
 
 It goes without saying that you should probably develop from the ground up with this in mind. Is your website going to explode into fame? Probably not.
