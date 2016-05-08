@@ -11,6 +11,8 @@ I find it interesting that the idea of developing a new feature and the actual d
 
 And then you get to the other hand when you start developing, angry that your own idea lied to you about how easy or simple it was going to be&#8230; Why, idea? I thought we were going to be friends!?
 
+<!--more-->
+
 Anyways, this past week I put out an update to my Extension Against Humanity Chrome extension, both UI and logic-wise. I actually received a small, but valuable amount of feedback from my friends about what could potentially be cool to add in future iterations; Everyone was on board with a way to copy and paste the card combinations that were generated so they could be more easily shared. So I set to work on creating a way to output the card combinations in a sentence before I could copy and paste them, and here's what I came up with!
 
 Aside from a few hook-ins with the function names to make it work, I created a function called `makeSentence()`, as you can see it takes the text that's passed in to it and replaces underscores (if any) in the answer cards. If there are no underscores, it appends the white card(s) at the end of the black card. It was a little tricky with the substringing, but I got it done no problem!
