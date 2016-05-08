@@ -35,7 +35,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $headings;
+  font-family: $oswald;
   color: #333;
   font-weight: bold;
 
@@ -274,6 +274,7 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    font-family: $oswald;
   }
 }
 
