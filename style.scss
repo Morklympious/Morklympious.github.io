@@ -199,7 +199,7 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $CCBlue;
   cursor: pointer;
   font-family: $oswald;
   font-size: 28px;
@@ -235,7 +235,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $CCRed;
     text-align: right;
     letter-spacing: 1px;
     font-family: $oswald;
@@ -296,11 +296,8 @@ nav {
 
 .entry {
   a {
-    color: $CCBlue;
+    color: $CCRed;
 
-    &:hover {
-      color: $CCRed;
-    }
   }
 }
 
