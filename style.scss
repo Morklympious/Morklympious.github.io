@@ -273,7 +273,7 @@ nav {
   }
 
   .post-title > a {
-    color: $gray;
+    color: $darkGray;
 
     &:hover {
       color: $CCRed;
@@ -291,6 +291,16 @@ nav {
       color: $CCRed;
     }
 
+  }
+}
+
+.entry {
+  a {
+    color: $CCBlue;
+
+    &:hover {
+      color: $CCRed;
+    }
   }
 }
 
