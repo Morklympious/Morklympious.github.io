@@ -23,7 +23,7 @@ I just wanted to be able to write out a ding-dang text file, throw it on my serv
 
 I don't need that amount of demon magic.
 
-## Enter Github pages
+..._Enter Github Pages_
 
 A while ago I found out that github supported pages, a feature that allows you to breathe a website to life via a specific branch of your project in github (that, or your entire account). This was an amazing discovery, because it meant I'd be able to integrate my knowledge of git with my blog writing process.
 
@@ -47,6 +47,8 @@ If you're trying to start a blog and you want it to be easily accessible I sugge
 - A free user site
 - Static site generation, and
 - A buttery smooth editing experience
+
+
 
 I'm not really looking back on this migration and thinking I made a bad choice. I made a choice that makes sense for me, and honestly, it feels light, clean, and awesome.
 
