@@ -267,6 +267,14 @@ nav {
     font-style: italic;
   }
 
+  .post-title > a {
+    color: $gray;
+
+    &:hover {
+      color: $CCRed;
+    }
+  }
+
   .comments {
     margin-top: 10px;
   }
@@ -274,7 +282,10 @@ nav {
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
+    color: $gray;
     font-family: $oswald;
+
+
   }
 }
 
