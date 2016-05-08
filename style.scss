@@ -7,6 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald);
 @import "reset";
 @import "variables";
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -20,10 +21,9 @@ html {
 body {
   background: $white;
   font: 18px/1.4 $helvetica;
-  //color: $darkGray;
+  color: $darkGray;
   margin: 40px auto;
   max-width: 850px;
-  color: #444;
   padding: 0 10px;
 }
 
@@ -200,10 +200,14 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $oswald;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+
+  &:hover {
+    color: $CCRed;
+  }
 }
 
 .site-description {
@@ -275,9 +279,6 @@ nav {
     }
   }
 
-  .comments {
-    margin-top: 10px;
-  }
 
   .read-more {
     text-transform: uppercase;
