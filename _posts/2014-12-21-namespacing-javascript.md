@@ -29,7 +29,7 @@ Boom. Namespaced. What I did there was define a property on the window object, a
 
 ```js
 window.codeAndComedy = {
-   function youMadeIt() {
+   youMadeIt: function () {
       alert("You made it!");
    }
 }
