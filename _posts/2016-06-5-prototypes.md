@@ -1,7 +1,7 @@
 ---
 id: 31
 title: Prototypes
-date: 2016-05-27
+date: 2016-06-05
 author: Bradley Stafford
 layout: post
 permalink: /prototypes/
