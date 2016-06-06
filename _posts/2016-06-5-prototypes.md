@@ -15,7 +15,7 @@ Anyways, today we're going to talk about prototypes and how crazy cool they are.
 
 <!--more-->
 
-## The prototype
+## The Prototype
 
 The prototype. A _crucial_ building block of any javascript code. You're probably wondering what it is, what it does, and why it sounds so _awesome_.
 
