@@ -1,7 +1,7 @@
 ---
 id: 32
 title: Object Funsies
-date: 2016-05-27
+date: 2016-06-26
 author: Bradley Stafford
 layout: post
 permalink: /object-funsies/
