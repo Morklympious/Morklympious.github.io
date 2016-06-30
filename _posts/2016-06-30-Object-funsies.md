@@ -107,7 +107,7 @@ __I sure can. Because javascript is just WEIRD.__
 
 ## Custom serialization
 
-Custom serialization is another thing you can do! if you need a serialized object and you don't like what `JSON.stringify(object.key)` gives you, you can just tell the object itself what it needs to do when it should be serialized.
+Custom serialization is another thing you can do! if you need a serialized object and you don't like what `JSON.stringify(object)` gives you, you can just tell the object itself what it needs to do when it should be serialized.
 
 ```js
 var object = {
@@ -117,12 +117,12 @@ var object = {
   }
 }
 ```
-Essentially what this object is doing is specifying a `toJSON()` property. Normally, when serializing an object, you end up with a string verson of the object as specified by `JSON.stringify()`. By defining it at the object level, the serialization process via `JSON.stringify` will use that objects method instead of the default method of serialization. I covered this in the last article about how prototypal inheritance and delegation up the prototype chain works.
+Essentially what this object is doing is specifying a `toJSON()` property. Normally, when serializing an object, you end up with a string verson of the object as specified by `JSON.stringify()`. By defining it at the object level, the serialization process via `JSON.stringify()` will use that method on the object instead of the default method of serialization. While not _strictly_ prototypal, it mimics behavior similar to the prototype chain. I covered this in the last article about how prototypal inheritance and delegation up the prototype chain works.
 
 ([Go read it.](prototypes))
 ([Also read about the custom `.toJSON()` property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#toJSON()_behavior))
 
-Anyways, Now we have an object that will run a custom hook if it's serialized! 
+Anyways, Now we have an object that will run (and serialize the return value of) a custom hook if we call it with `JSON.stringify()`! 
 
 ```js
 var object = {
@@ -136,10 +136,10 @@ JSON.stringify(object) === '"Literally nothing related to this object. Serialize
 
 ```
 
-This works because `toJSON()` is called first on `object`, since we've defined it here, it actually takes this function and uses it to output a serialized representation of the object (which we've specified to just be a stupid string that has NOTHING to do with the object.)
+Again, This works because `toJSON()`exists on `object`. Since we've defined it here, it actually takes this function and uses it to output a serialized return value from `toJSON()`
 
 ## Your brain is a little fried
 
-This isn't the only time javascript is gonna blow your mind. it's ridiculous how flexible this language is, man. I recommend you head over to [JSBin](http://jsbin.com) or some other editor and try these things out!
+This isn't the only time javascript is gonna blow your mind. it's ridiculous how flexible this language is, man. I recommend you head over to [JSBin](http://jsbin.com) or some other editor and try these things out! And if none of them work, please tell me so I can actually fix my examples (if they're not-so-hot)
 
 Happy coding!
