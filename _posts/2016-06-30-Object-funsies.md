@@ -37,7 +37,7 @@ var object = {
 var obj = Object.create(null);
 ```
 
-The difference between these two is that the former has a prototype, which is `Object`. The latter, however, has __No__ prototype. `Object.create` accepts a parameter that can either be an object, or `null`, and it uses that object to define the created object's prototype (instead of the default `Object` prototype). If it's `null`, the object is literally created with no prototype, meaning it's a truly naked POJO (plain ol' javascript object).
+The difference between these two is that the former has a prototype, which is `Object`. The latter, however, has __no__ prototype. `Object.create` accepts a parameter that can either be an object, or `null`, and it uses that object to define the created object's prototype (instead of the default `Object` prototype). If it's `null`, the object is literally created with no prototype, meaning it's a truly naked POJO (plain ol' javascript object).
 
 Object creation became more interesting to me at that point. Amazing that an object could be created completely clean and free of prototypes.
 
