@@ -73,33 +73,44 @@ var obj = Object.create({
 ```
 So it turns out that with _any_ property defined on an object this way, we can define whether or not it can change, whether or not it can be looped over, __as well as__ whether or not we can actually change these meta-level properties at a later time!
 
-Objects are pretty nuts. There's another interesting conferred by using `Object.create`, it's custom getting and setting.
+Objects are pretty nuts. There's another interesting thing conferred by using `Object.create`, it's custom getting and setting.
 
 ### Custom getting and setting with `Object.create`
 
 ```js
-var obj = Object.create({
-  key: {
-    value: 'value', // The value for this key
+function Box() {
+  
+  var _value = 5;
+  
+  // Add a 'value' property, making this.value retrievable and accessible
+  Object.defineProperty(this, 'value', {
     get: function() {
-      console.log('THERE CAN BE ONLY ONE HIGHLANDER.');
-      return this.value;
+      console.log('THERE CAN BE ONLY ONE HIGHLANDER');
+      
+      // We're able to access this via a closure, so we can return it!
+      return _value;
     },
     set: function(val) {
       console.log('NEW VALUE OH BOY');
-      this.value = val;
+      
+      // val in this case is the right hand side of the 
+      // assignment expression
+      _value = val;
     }
-  }
-});
+  });
+
+}
+
+var crate = new Box();
 ```
 
-Okay... this is. This is ridiculous. But you see where I'm going with this, right? You could take an object property and define custom getters and setters on it that could potentially produce all kinds of side effects.
+I'm using `Object.defineProperty` here to attach a property to the `this` of the `Box()` constructor. This is ridiculous. But you see where I'm going with this, right? You could create any object property and define custom getters and setters on it that could potentially produce all kinds of side effects.
 
-For example, based on my definition up there, literally __any time__ I access `obj.value`, that is, __any time I read `obj.value`__, the `get` function runs, and I get 'THERE CAN BE ONLY ONE HIGHLANDER' output to my console.
+For example, based on my definition up there, literally __any time__ I access `crate.value`, that is, __any time I read `crate.value`__, the `get` function runs, and I get 'THERE CAN BE ONLY ONE HIGHLANDER' output to my console.
 
 Every time.
 
-Conversely, if I assign a new value to my key via `obj.key = 5`, I'll get "NEW VALUE OH BOY" thrown into my console because it'll run the `set` function.
+Conversely, if I assign a new value to my key via `crate.value = 5`, I'll get "NEW VALUE OH BOY" thrown into my console because it'll run the `set` function.
 
 This is amazing. It's also incredibly ill-advised without a proper use-case. But the point is _can you believe this is a thing?_
 
