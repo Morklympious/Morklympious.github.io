@@ -119,7 +119,7 @@ var object = {
 ```
 Essentially what this object is doing is specifying a `toString()` property. Normally, when serializing an object, you end up with a string verson of the object (because `toString()` is actually a part of the default Object's prototype, which gets called in this case). By defining it at the object level, you can actually reference object and it will be serialized the way you've defined in your `toString()` function. I covered this in the last article about how prototypal inheritance and delegation up the prototype chain works.
 
-([Go read it.](Morklympious.github.io/prototypes))
+([Go read it.](prototypes))
 
 Anyways, Now we have an object that will JSON parse itself if it's just expressed as itself in naked code (`object`) or coerced into a string (via `'' + object`).
 
