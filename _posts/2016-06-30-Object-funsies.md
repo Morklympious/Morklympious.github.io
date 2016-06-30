@@ -107,36 +107,36 @@ __I sure can. Because javascript is just WEIRD.__
 
 ## Custom serialization
 
-Custom serialization is another thing you can do! if you need a serialized object and you don't like the look of calling `JSON.stringify(object.key)`, you can just tell the object itself what it needs to do when it should be serialized.
+Custom serialization is another thing you can do! if you need a serialized object and you don't like what `JSON.stringify(object.key)` gives you, you can just tell the object itself what it needs to do when it should be serialized.
 
 ```js
 var object = {
   key: 'value',
-  toString: function() {
-    return JSON.stringify(this.key);
+  toJSON: function() {
+    return "Literally nothing related to this object. Serialized";
   }
 }
 ```
-Essentially what this object is doing is specifying a `toString()` property. Normally, when serializing an object, you end up with a string verson of the object (because `toString()` is actually a part of the default Object's prototype, which gets called in this case). By defining it at the object level, you can actually reference object and it will be serialized the way you've defined in your `toString()` function. I covered this in the last article about how prototypal inheritance and delegation up the prototype chain works.
+Essentially what this object is doing is specifying a `toJSON()` property. Normally, when serializing an object, you end up with a string verson of the object as specified by `JSON.stringify()`. By defining it at the object level, the serialization process via `JSON.stringify` will use that objects method instead of the default method of serialization. I covered this in the last article about how prototypal inheritance and delegation up the prototype chain works.
 
 ([Go read it.](prototypes))
+([Also read about the custom `.toJSON()` property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify#toJSON()_behavior))
 
-Anyways, Now we have an object that will JSON parse itself if it's just expressed as itself in naked code (`object`) or coerced into a string (via `'' + object`).
-
+Anyways, Now we have an object that will run a custom hook if it's serialized! 
 
 ```js
 var object = {
   key: 'value',
-  toString: function() {
-    return this.key;
+  toJSON: function() {
+    return "Literally nothing related to this object. Serialized";
   }
 }
 
-object === 'value' // true
+JSON.stringify(object) === '"Literally nothing related to this object. Serialized"' // true
 
 ```
 
-This works because `toString()` is called first on `object`, since we've defined it here, it actually takes this function and uses it to output a serialized representation of the object (which we've specified to just be the value of `key`)
+This works because `toJSON()` is called first on `object`, since we've defined it here, it actually takes this function and uses it to output a serialized representation of the object (which we've specified to just be a stupid string that has NOTHING to do with the object.)
 
 ## Your brain is a little fried
 
