@@ -23,6 +23,8 @@ var object = {
 
 It was great! I knew that if I needed a hash map, a dictionary, or a structure that I'd be using to look stuff up, I'd use an object. They were so simple! So brilliant!
 
+<!--more-->
+
 They're still brilliant, but over time I found out that they could get as complex as you wanted them. The object primitive, `{}`, is what most javascripters use when they need an object. There's also `Object.create`
 
 ## Some `Object.create` magic
