@@ -75,7 +75,7 @@ So it turns out that with _any_ property defined on an object this way, we can d
 
 Objects are pretty nuts. There's another interesting thing conferred by using `Object.create`, it's custom getting and setting.
 
-### Custom getting and setting with `Object.create`
+### Custom getting and setting with `Object.defineProperty`
 
 ```js
 function Box() {
