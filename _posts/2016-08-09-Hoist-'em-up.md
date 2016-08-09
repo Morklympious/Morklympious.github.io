@@ -32,7 +32,7 @@ var dopest = function() {
 }
 ```
 
-These are two of many ways that you could define a function in javascript. the first definition is called a function definition. The second is called a function expression.
+These are two of many ways that you could define a function in javascript. the first definition is called a function declaration. The second is called a function expression.
 
 __Function declarations in javascript are hoisted__  
 
