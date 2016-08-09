@@ -7,10 +7,9 @@ layout: post
 permalink: /hoist-em-up/
 ---
 
-Let's have a quick chat about hoisting.
+Let's have a quick chat about hoisting in javascript.
 
 When I say hoisting, I'm talkin' about pullin' yourself up by your bootstraps and DOING SOMETHING WITH YOUR LIFE. Focus on your craft! JUST FOCUS ON YOUR CRAFT!
-
 And then when you're done doing that, let's have a quick chat about hoisting in javascript
 
 So, this is an interesting question in that when I was interviewing last year for various web developer positions, I was asked this question a few times despite getting pretty far in my career without hearing about it.
@@ -118,7 +117,6 @@ You see that each variable defined in the `variables` function is defined at the
 ## Conclusion
 
 In general, I like to define my variables where I choose to define them with `var`, I'm not the biggest fan of letting other developers interpret that I'm using variable hoisting, so I prefer to reference variables after I explicitly define and/or assign them.
-
 Make the best call for your projects! Pull up those suspenders! HOIST.
 
 Happy coding!
