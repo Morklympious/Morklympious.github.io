@@ -63,7 +63,7 @@ Notice that calling the function before it's written causes an error. The differ
 
 Yeah, that's right, _declaring_ a function (e.g. `function fn() {}`) allows javascript engines to index those functions so they're able to be used anywhere in the scope they're defined in (regardless of where they're defined in that scope). Conversely, _expressing_ a function (e.g. `var fn = function() {}`) means that it only becomes available after the `var` is evaluated to be a function.
 
-__function expressions (e.g. functions defined with `var`) are not hoisted__
+__function expressions (e.g. functions assigned to a variable) are not hoisted__
 
 ## Variable hoisting
 
