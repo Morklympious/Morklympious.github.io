@@ -17,7 +17,7 @@ I want to take some time to actually throw down some of my ideas of Javascript l
 
 <!--more-->
 
-## Idea: Famous Jasons
+# Idea: Famous Jasons
 
 The headline is all I really need to make the joke. I think it'd be funny to make JSON files for every famous Jason that we have. Think about how comical it'd be to have this arbitrary file containing data about some famous Jason!
 
