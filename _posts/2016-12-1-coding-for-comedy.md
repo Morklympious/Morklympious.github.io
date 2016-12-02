@@ -36,6 +36,7 @@ What did I tell you? I'd break my back for the joke. It's not even that GOOD. He
 I always thought it'd be a great idea to make a functional Javascript library that performs a bunch of functions that do trivial or almost worthless computations. Why? Well, sure, there's no actual utility (or maybe some trivial amount of utility that you couldn't get elsewhere with Lodash, jQuery, etc.) but more importantly it shows that I can BUILD THINGS. FUNNY THINGS.
 
 consider this:
+
 ```js
 // There is almost no purpose to this.
 function former(former, latter) {
