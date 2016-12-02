@@ -11,9 +11,11 @@ If you couldn't tell, I'm a man of jokes. A lot of jokes. In fact, suffice it to
 
 Yes. Yes it does. That's probably why I'm writing this.
 
-Writing Javascript for jokes is probably one of the most useful things I (or you) could do with your time. You're using your knowledge to construct something that you ostensibly could show to other people and have a laugh about while demonstrating some skills. Unless you're constructing a project that just outputs the word "BANANA" and all of its anagrams... I don't think there are a lot of those 
+Writing Javascript for jokes is probably one of the most useful things I (or you) could do with your time. You're using your knowledge to construct something that you ostensibly could show to other people and have a laugh about while demonstrating some skills. Unless you're constructing a project that just outputs the word "BANANA" and all of its anagrams... I don't think there are a lot of those.
 
 I want to take some time to actually throw down some of my ideas of Javascript libraries that would be really fun to make. Am I a visionary? Well. Let's just call me the Kanye West of Javascript.
+
+<!--more-->
 
 ## Idea: Famous Jasons
 
