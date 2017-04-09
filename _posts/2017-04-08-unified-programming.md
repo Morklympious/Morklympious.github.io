@@ -1,7 +1,7 @@
 ---
 id: 35
 title: Unified Programming
-date: 2016-12-01
+date: 2016-04-08
 author: Bradley Stafford
 layout: post
 permalink: /unified-programming/
