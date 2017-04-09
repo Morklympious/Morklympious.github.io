@@ -17,6 +17,8 @@ I didn't like the camel case, I was groaning at the pedantic use of ES6, the lac
 
 I began fighting.
 
+<!--more-->
+
 I fought the hell out of the convention that was already there. I won some battles, and some battles were much like the trials of Sisyphus: progress without payoff. I knew in my head that a lot of the problem had to do with the way I believed code should be structured, and I was very eager to defend that structure. However, the more time I've had to think about it, and the more times I've had to justify what I wanted to do: I was hard pressed to find a reason other than "it looks good".
 
 This is where we get into the meat of the lesson: adapt. As a member of a team, it's important that you find a middle ground for "what makes sense" in your code vs. "what you want".
