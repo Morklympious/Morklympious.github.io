@@ -25,6 +25,6 @@ Back to why it was awesome: instead of focusing on a predetermined set of proble
 
 If you ever apply to a place that screens you by giving you a problem to solve and tells you to come back in a week with it, give it your absolute best. Interviews should be about showing what you can do, not what you can memorize. The SeniorHomes screen that I experienced gave me that opportunity, and I did in fact get the in-person interview with them.
 
-View my [SeniorHomes Mockup](http://github.com/morklympious/take-home-tests) on Github
+View my [SeniorHomes Mockup](http://github.com/stffrd/take-home-tests) on Github
 
 Clone it, make it better, check it out!
